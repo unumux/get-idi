@@ -1,0 +1,38 @@
+@mixin base() {
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 3rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    margin-top: 3rem;
+    max-width: 1250px;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    @media all and (min-width: 768px) {
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+        margin-top: 5rem;
+        padding: 8rem;
+    }
+
+    @media all and (min-width: 1250px) {
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+    }
+}
+
+.call-to-action {
+    @include base;
+
+    @import 'content';
+    @import 'heading';
+    @import 'descriptor';
+    @import  'container';
+    @import 'group';
+}

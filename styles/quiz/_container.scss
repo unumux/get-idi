@@ -1,0 +1,17 @@
+@mixin base() {
+    display: flex;
+    flex-direction: column-reverse;
+    // max-width: 1250px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    @media all and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+        padding: 7rem;
+    }
+}
+
+&__container {
+    @include base;
+}

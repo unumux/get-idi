@@ -1,0 +1,25 @@
+@mixin base() {
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    width: 375px;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: 50%;
+        flex-grow: 0;
+        flex-shrink: 1;
+        max-width: 600px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: 50%;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+}
+
+.video {
+    @include base;
+
+    @import 'content';
+    @import 'wrapper';
+}

@@ -1,0 +1,23 @@
+@mixin base() {
+    background-color: #fff;
+    border-radius: .8rem;
+    box-shadow: 5px 5px 2px #E6E8EA;
+    height: 38rem;
+    margin-bottom: 1rem;
+    width: 35rem;
+
+    @media all and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
+.testimonial {
+    @include base;
+
+    @import 'image';
+    @import 'name';
+    @import 'description';
+    @import 'caption';
+    @import 'button';
+    @import 'buttons';
+}

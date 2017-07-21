@@ -1,0 +1,40 @@
+@mixin base() {
+
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+
+    @media all and (min-width: 768px) {
+        margin: 0;
+        max-width: 100%;
+        text-align: initial;
+    }
+
+}
+
+.footer-nav {
+    @include base;
+
+    &__item {
+        display: inline;
+        font-size: 1.6rem;
+        list-style-type: none;
+        padding: 0;        
+    }
+
+    &__link {
+        color: white;
+        margin-right: 1rem;
+    }
+
+    .bullet {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    @import 'list';
+}
