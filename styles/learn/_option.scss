@@ -14,7 +14,7 @@
     @include base;
 
     &--description {
-        font-weight: 600;
+        font-weight: 500;
 
         @media all and (min-width: 768px) {
             padding-top: 6rem;
@@ -26,6 +26,15 @@
 
         @media all and (min-width: 768px) {
             margin-top: 0;
+        }
+    }
+
+    &--expert {
+        font-weight: 500;
+        width: 15.5rem;
+
+        @media all and (min-width: 768px) {
+            padding-top: 6rem;
         }
     }
 }
