@@ -26,20 +26,4 @@
         margin-bottom: 4rem;
     }
 
-    &--button {
-        background-color: #015294;
-        border-radius: .4rem;
-        color: white;
-        display: block;
-        font-size: 1.8rem;
-        margin-bottom: 4rem;
-        padding: 1rem;
-        text-align: center;
-        text-decoration: none;
-        width: 29rem;
-
-        @media all and (min-width: 768px) {
-            width: 25rem;
-        }
-    }
 }
