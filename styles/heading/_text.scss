@@ -1,6 +1,7 @@
 @mixin base() {
     color: #fff;
-    background-image: url('https://unumux.github.io/get-idi/images/family-hero-image.jpg');
+    background-image: url('../images/family-hero-image.jpg');
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 15px solid #4981B0;
